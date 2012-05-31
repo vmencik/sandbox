@@ -1,0 +1,18 @@
+apply plugin: 'scala'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Libraries needed to run the scala tools
+    scalaTools 'org.scala-lang:scala-compiler:2.9.2'
+    scalaTools 'org.scala-lang:scala-library:2.9.2'
+
+    // Libraries needed for scala api
+    compile 'org.scala-lang:scala-library:2.9.2'
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.8.2'
+} 
