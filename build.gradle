@@ -11,6 +11,10 @@ sourceSets {
 
 repositories {
 	mavenCentral()
+	
+	maven {
+		url "http://repo.typesafe.com/typesafe/releases/"
+	}
 }
 
 dependencies {
@@ -20,6 +24,9 @@ dependencies {
 
 	// Libraries needed for scala api
 	compile 'org.scala-lang:scala-library:2.9.2'
+	
+	// Akka
+	compile 'com.typesafe.akka:akka-actor:2.0.2'
 }
 
 dependencies {
