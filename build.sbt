@@ -4,7 +4,7 @@ version := "1.0-SNAPSHOT"
 
 scalaVersion := "2.9.2"
  
-resolvers += Classpaths.typesafeResolver
+resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
 
 libraryDependencies ++= Seq (
 	"com.typesafe.akka" % "akka-actor" % "2.0.3",
@@ -13,3 +13,5 @@ libraryDependencies ++= Seq (
 )
 
 EclipseKeys.executionEnvironment := Some(EclipseExecutionEnvironment.JavaSE16)
+
+EclipseKeys.withSource := true
